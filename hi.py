@@ -9,18 +9,28 @@
 # f = c * 9 / 5 + 32
 # print('華氏溫度為: ', f)
 
-h = int(input('anwser your height: '))
-w = int(input('anwser your weight: '))
-bmi = w / h**2
-if bmi < 18.5:
-    print('過輕')
-elif bmi >= 18.5 and bmi <24:
-    print('正常')
-elif bmi >= 24 and bmi < 27:
-    print('過重')
-elif bmi >= 27 and bmi < 30:
-    print('輕度肥')
-elif bmi >= 30 and bmi < 35:
-    print('中度肥')
+# h = int(input('anwser your height: '))
+# w = int(input('anwser your weight: '))
+# bmi = w / h**2
+# if bmi < 18.5:
+#     print('過輕')
+# elif bmi >= 18.5 and bmi <24:
+#     print('正常')
+# elif bmi >= 24 and bmi < 27:
+#     print('過重')
+# elif bmi >= 27 and bmi < 30:
+#     print('輕度肥')
+# elif bmi >= 30 and bmi < 35:
+#     print('中度肥')
+# else:
+#     print('重度肥')
+
+driving = input('請問是否開過車?(Y/N) ')
+age = int(input('輸入年齡'))
+if driving == 'Y':
+    if age >= 18:
+        print('pass')
+    else:
+        print('that is weird!')
 else:
-    print('重度肥')
+    print('ok,bye~')
