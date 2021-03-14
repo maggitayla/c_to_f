@@ -25,12 +25,29 @@
 # else:
 #     print('重度肥')
 
-driving = input('請問是否開過車?(Y/N) ')
-age = int(input('輸入年齡'))
-if driving == 'Y':
-    if age >= 18:
-        print('pass')
-    else:
-        print('that is weird!')
-else:
-    print('ok,bye~')
+# driving = input('請問是否開過車?(Y/N) ')
+# age = int(input('輸入年齡'))
+# if driving == 'Y':
+#     if age >= 18:
+#         print('pass')
+#     else:
+#         print('that is weird!')
+# else:
+#     print('ok,bye~')
+
+x = 3
+while x < 10:
+    print('keep going')
+    x = x + 2
+print("it's done")
+
+# while True: #無限迴圈
+#     mode = input('輸入模式')
+#     if mode == 'q': #quit
+#         break
+#     elif mode == '1':
+#         print('啟動模式一')
+#     elif mode == '2':
+#         print('啟動模式二')
+#     else:
+#         print('只能輸入q/1/2')
