@@ -35,11 +35,11 @@
 # else:
 #     print('ok,bye~')
 
-x = 3
-while x < 10:
-    print('keep going')
-    x = x + 2
-print("it's done")
+# x = 3
+# while x < 10:
+#     print('keep going')
+#     x = x + 2
+# print("it's done")
 
 # while True: #無限迴圈
 #     mode = input('輸入模式')
@@ -51,3 +51,18 @@ print("it's done")
 #         print('啟動模式二')
 #     else:
 #         print('只能輸入q/1/2')
+
+password = 'a123456'
+times = 3
+while True:
+    ans_pwd = input('輸入密碼:')
+    if ans_pwd == password:
+        print('ok')
+        break
+    else:
+        times = times - 1
+        print('chance left: ', times)
+        if times == 0:
+            print('your account is blocked')
+            break
+
