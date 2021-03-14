@@ -52,20 +52,37 @@
 #     else:
 #         print('只能輸入q/1/2')
 
-password = 'a123456'
-times = 3
-while times > 0:
-    ans_pwd = input('輸入密碼:')
-    if ans_pwd == password:
-        print('ok')
-        break
-    else:
-        times = times - 1
-        if times == 0:
-            print('your account is blocked')
-        else:
-            print('chance left: ', times)
-        # if times == 0:
-        #     print('your account is blocked')
-        #     break
+# password = 'a123456'
+# times = 3
+# while times > 0:
+#     ans_pwd = input('輸入密碼:')
+#     if ans_pwd == password:
+#         print('ok')
+#         break
+#     else:
+#         times = times - 1
+#         if times == 0:
+#             print('your account is blocked')
+#         else:
+#             print('chance left: ', times)
+#         # if times == 0:
+#         #     print('your account is blocked')
+#         #     break
 
+import random
+r = random.randint(1,100)
+t = 0
+while True:
+    t += 1
+    guess = int(input('猜數字'))
+    if t > 10:
+        print('猜超過10次了QQ byebye')
+        break
+    else: 
+        if guess == r:
+            print('答對了~~ 共猜了', t, '次')
+            break
+        elif guess > r:
+            print('太大了')
+        else:
+            print('太小了')
