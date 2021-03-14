@@ -52,17 +52,17 @@
 #     else:
 #         print('只能輸入q/1/2')
 
-password = 'a123456'
-times = 3
-while True:
-    ans_pwd = input('輸入密碼:')
-    if ans_pwd == password:
-        print('ok')
-        break
-    else:
-        times = times - 1
-        print('chance left: ', times)
-        if times == 0:
-            print('your account is blocked')
-            break
-
+# password = 'a123456'
+# times = 3
+# while times > 0:
+#     ans_pwd = input('輸入密碼:')
+#     if ans_pwd == password:
+#         print('ok')
+#         break
+#     else:
+#         times = times - 1
+#         print('chance left: ', times)
+#         # if times == 0:
+#         #     print('your account is blocked')
+#         #     break
+# print('your account is blocked')
