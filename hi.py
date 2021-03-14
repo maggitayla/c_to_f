@@ -69,20 +69,26 @@
 #         #     print('your account is blocked')
 #         #     break
 
-import random
-r = random.randint(1,100)
-t = 0
-while True:
-    t += 1
-    guess = int(input('猜數字'))
-    if t > 10:
-        print('猜超過10次了QQ byebye')
-        break
-    else: 
-        if guess == r:
-            print('答對了~~ 共猜了', t, '次')
-            break
-        elif guess > r:
-            print('太大了')
-        else:
-            print('太小了')
+# import random
+# r = random.randint(1,100)
+# t = 0
+# while True:
+#     t += 1
+#     guess = int(input('猜數字'))
+#     if t > 10:
+#         print('猜超過10次了QQ byebye')
+#         break
+#     else: 
+#         if guess == r:
+#             print('答對了~~ 共猜了', t, '次')
+#             break
+#         elif guess > r:
+#             print('太大了')
+#         else:
+#             print('太小了')
+
+a = ['toyota', 'honda']
+a.append('audi')
+print(a)
+print(a[1])
+print('toyota' in a)
