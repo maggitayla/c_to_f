@@ -87,8 +87,31 @@
 #         else:
 #             print('太小了')
 
-a = ['toyota', 'honda']
-a.append('audi')
-print(a)
-print(a[1])
-print('toyota' in a)
+# a = ['toyota', 'honda']
+# a.append('audi')
+# # print(a)
+# # print(a[1])
+# # print('toyota' in a)
+# b = 0
+# for car in a:
+#     b += 1
+#     print(b,'.', car)
+
+# students = ['Allen', 'Tom', 'Mayday', \
+#     'JJ', 'Jolin', 'Jay', 'Jam']
+# for student in students:
+#     print('Hi', student)
+
+# data = []
+# with open('food.txt', 'r') as f:
+#     for line in f:
+#         data.append(line.strip()) #strip對字串去除空白
+# print(data)
+
+data = []
+with open('reviews.txt', 'r') as f:
+    for line in f:
+        data.append(line)
+        print(len(data))
+print(len(data))
+print(data[0])
