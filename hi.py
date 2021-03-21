@@ -138,12 +138,24 @@
 
 #range的使用方式，藉由range的數字做為重複顯示的數量
 
-import random
+# import random
 
-a = range(5)
-for i in a:
-    r = random.randint(1,100)
-    print(r)
-b = range(50, 10, -21)
-for j in b:
-    print(j)
+# a = range(5)
+# for i in a:
+#     r = random.randint(1,100)
+#     print(r)
+# b = range(50, 10, -21)
+# for j in b:
+#     print(j)
+
+products = []
+while True:
+    name = input('請輸入商品名稱')
+    if name == 'q':
+        break
+    price = input('請輸入價格')
+    p = [name, price]
+    # p.append(name)
+    # p.append(price)
+    products.append(p)
+print(products[0])
