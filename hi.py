@@ -120,3 +120,9 @@ for d in data:
 print(sum_len / len(data))
 # print(len(data))
 # print(data[0])
+
+new=[]
+for d in data:
+    if len(d) < 100:
+        new.append(d)
+print(len(new))
