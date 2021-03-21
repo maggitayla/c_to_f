@@ -122,7 +122,16 @@ print(sum_len / len(data))
 # print(data[0])
 
 new=[]
-for d in data:
+for d in line:
     if len(d) < 100:
         new.append(d)
 print(len(new))
+
+# good = []
+# for d in data:
+#     if 'good' in d:
+#         good.append(d)
+
+good = [d for d in data if 'good' in d]
+
+print(len(good))
