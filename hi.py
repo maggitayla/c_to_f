@@ -108,30 +108,42 @@
 #         data.append(line.strip()) #strip對字串去除空白
 # print(data)
 
-data = []
-with open('reviews.txt', 'r') as f:
-    for line in f:
-        data.append(line)
+# data = []
+# with open('reviews.txt', 'r') as f:
+#     for line in f:
+#         data.append(line)
 
-sum_len = 0
+# sum_len = 0
 
-for d in data:
-    sum_len = len(d) + sum_len
-print(sum_len / len(data))
-# print(len(data))
-# print(data[0])
-
-new=[]
-for d in line:
-    if len(d) < 100:
-        new.append(d)
-print(len(new))
-
-# good = []
 # for d in data:
-#     if 'good' in d:
-#         good.append(d)
+#     sum_len = len(d) + sum_len
+# print(sum_len / len(data))
+# # print(len(data))
+# # print(data[0])
 
-good = [d for d in data if 'good' in d]
+# new=[]
+# for d in line:
+#     if len(d) < 100:
+#         new.append(d)
+# print(len(new))
 
-print(len(good))
+# # good = []
+# # for d in data:
+# #     if 'good' in d:
+# #         good.append(d)
+
+# good = [d for d in data if 'good' in d]
+
+# print(len(good))
+
+#range的使用方式，藉由range的數字做為重複顯示的數量
+
+import random
+
+a = range(5)
+for i in a:
+    r = random.randint(1,100)
+    print(r)
+b = range(50, 10, -21)
+for j in b:
+    print(j)
